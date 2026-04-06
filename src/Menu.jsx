@@ -128,7 +128,7 @@ className="w-full h-52 sm:h-56 object-cover rounded-t-3xl transition-transform d
         All prices are in INR • Taxes extra as applicable
       </div>
       <div className="text-center mt-16 text-zinc-500 text-sm">
-Owner Ganesh Chandrakan Jagtap
+Owner Ganesh Chandrakant Jagtap
       </div>
     </div>
   );
