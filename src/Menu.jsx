@@ -27,18 +27,6 @@ export default function Menu() {
     },
     {
       id: 3,
-    
-      name: "Signature Mojito",
-      category: "Dessert",
-      price: 320,
-      desc: "A refreshing fusion of mint, lime & sparkling soda, crafted to energize your senses",
-      img: "https://thumbs.dreamstime.com/b/mojito-lemonade-summer-cold-drink-plastic-glass-straw-coctail-mint-lemon-lime-ice-serve-bar-mojito-182587013.jpg",
-      rating: 4.8,
-      time: "12 min",
-      isVeg: true
-    },
-    {
-      id: 4,
       name: "Big Combo",
       category: "Starters",
       price: 110,
@@ -49,7 +37,7 @@ export default function Menu() {
       isVeg: true
     },
     {
-      id: 5,
+      id: 4,
       name: "small combo",
       category: "Rice & Noodles",
       price: 80,
@@ -138,6 +126,9 @@ className="w-full h-52 sm:h-56 object-cover rounded-t-3xl transition-transform d
       {/* Footer Note */}
       <div className="text-center mt-16 text-zinc-500 text-sm">
         All prices are in INR • Taxes extra as applicable
+      </div>
+      <div className="text-center mt-16 text-zinc-500 text-sm">
+Owner Ganesh Chandrakan Jagtap
       </div>
     </div>
   );
