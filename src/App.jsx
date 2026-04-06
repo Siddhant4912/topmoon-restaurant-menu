@@ -8,7 +8,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Menu />} />
-        <Route path="/menu" element={<QRScanner></QRScanner>} />
+        <Route path="/barcode" element={<QRScanner></QRScanner>} />
       </Routes>
     </BrowserRouter>
   );
