@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import QRScanner from "./QRScanner";
 import Menu from "./Menu";
-import './app.css'
+import './App.css'
 
 export default function App() {
   return (
