@@ -2,6 +2,32 @@ export default function Menu() {
   const menuItems = [
     {
       id: 1,
+
+       name: "Burger, Fries & Coffee Combo",
+      category: "Main Course",
+      price: 100,
+      desc: "A juicy burger served with crispy golden fries and a hot cup of coffee — the perfect comfort meal.",
+      img: "https://sandwichbox.in/img/dish/sm9.jpg",
+      rating: 4.9,
+      time: "20 min",
+      isVeg: false
+     
+    },
+    {
+      id: 2,
+        name: "Cheese Fries",
+      category: "Rice & Noodles",
+      price: 120,
+      desc: "Crispy fries loaded with melted cheese",
+      img: "https://static.vecteezy.com/system/resources/thumbnails/050/393/583/small/crispy-loaded-french-fries-with-cheese-sauce-and-bacon-photo.jpg",
+      rating: 4.7,
+      time: "15 min",
+      isVeg: true
+      
+    },
+    {
+      id: 3,
+    
       name: "Signature Mojito",
       category: "Dessert",
       price: 320,
@@ -12,60 +38,28 @@ export default function Menu() {
       isVeg: true
     },
     {
-      id: 2,
-      name: "Burger, Fries & Coffee Combo",
-      category: "Main Course",
-      price: 420,
-      desc: "A juicy burger served with crispy golden fries and a hot cup of coffee — the perfect comfort meal.",
-      img: "https://sandwichbox.in/img/dish/sm9.jpg",
-      rating: 4.9,
-      time: "20 min",
-      isVeg: false
-    },
-    {
-      id: 3,
-      name: "Cheese Fries",
-      category: "Rice & Noodles",
-      price: 290,
-      desc: "Crispy fries loaded with melted cheese",
-      img: "https://static.vecteezy.com/system/resources/thumbnails/050/393/583/small/crispy-loaded-french-fries-with-cheese-sauce-and-bacon-photo.jpg",
-      rating: 4.7,
-      time: "15 min",
-      isVeg: true
-    },
-    {
       id: 4,
-      name: "Hara Bhara Kebab",
+      name: "Big Combo",
       category: "Starters",
-      price: 260,
+      price: 110,
       desc: "Delicious spinach, peas and potato patties served with mint chutney",
-      img: "https://www.freepik.com/premium-ai-image/hamburger-cup-beer-are-table_367361769.htm#fromView=search&page=1&position=39&uuid=951a7dd0-bf2f-48d3-b6ea-04e939dc1b02&query=cappiccino+with+burger+",
+      img: "https://b.zmtcdn.com/data/dish_photos/8ff/53a0d736cbca3c997e68ab5c126a98ff.jpeg",
       rating: 4.6,
       time: "10 min",
       isVeg: true
     },
     {
       id: 5,
-      name: "Chicken Hakka Noodles",
+      name: "small combo",
       category: "Rice & Noodles",
-      price: 310,
+      price: 80,
       desc: "Indo-Chinese style stir fried noodles with juicy chicken pieces",
-      img: "https://picsum.photos/id/1060/600/400",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQpWYnfbkBqXlCox1rpAteKKh0d1X92i49g&s",
       rating: 4.8,
       time: "14 min",
       isVeg: false
     },
-    {
-      id: 6,
-      name: "Chocolate Lava Cake",
-      category: "Desserts",
-      price: 220,
-      desc: "Warm molten chocolate cake served with vanilla ice cream",
-      img: "https://picsum.photos/id/1080/600/400",
-      rating: 4.9,
-      time: "8 min",
-      isVeg: true
-    }
+  
   ];
 
   return (
