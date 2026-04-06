@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+[data-theme="dark"]{
+    --bg-color:#1e1e1e;
+    --text-color:#ffffff;
+    --button-bg:#444444;
+    --button-text:#ffffff;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
