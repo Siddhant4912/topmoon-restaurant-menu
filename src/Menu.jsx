@@ -10,7 +10,7 @@ export default function Menu() {
       img: "https://sandwichbox.in/img/dish/sm9.jpg",
       rating: 4.9,
       time: "20 min",
-      isVeg: false
+      isVeg: true
      
     },
     {
