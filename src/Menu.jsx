@@ -1,4 +1,4 @@
-import coffeewithIceCream from "./assets/images/coffeewithIceCream.jpeg";
+import coffeewithIceCream from "./assets/images/coffeewithicecream.jpeg";
 import twocoffee from "./assets/images/2coffee.jpeg";
 import coffeewithsandwich from "./assets/images/cofeewithsandwich.jpeg";
 import burgerfriescoffee from "./assets/images/burgerfriescoffee.jpeg";
