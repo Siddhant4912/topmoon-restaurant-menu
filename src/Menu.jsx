@@ -119,7 +119,7 @@ export default function Menu() {
     },
     {
       id: 11,
-      name: "Cappuccino",
+      name: "1 Cappuccino",
       category: "Combo",
       price: 80,
       desc: "Large combo with fries and coffee",
@@ -130,7 +130,7 @@ export default function Menu() {
     },
     {
       id: 12,
-      name: "Oreomilkshake",
+      name: "1 Oreomilkshake",
       category: "Combo",
       price: 100,
       desc: "Large combo with fries and coffee",
