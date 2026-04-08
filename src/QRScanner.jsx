@@ -4,7 +4,7 @@ import { QRCodeCanvas } from "qrcode.react";
 export default function QRScanner() {
   const qrRef = useRef();
 
-  const url = "https://top-moon.vercel.app/menu";
+  const url = "https://topmoon-restaurant-menu-k5re.vercel.app/";
 
   const downloadQR = () => {
     const canvas = qrRef.current.querySelector("canvas");
