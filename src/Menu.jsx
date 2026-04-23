@@ -14,6 +14,13 @@ import image5 from "./assets/images/image5.jpeg";
 import image12 from "./assets/images/image12.jpeg";
 import image13 from "./assets/images/image13.jpeg";
 import image14 from "./assets/images/image14.jpeg";
+import image15 from "./assets/images/image15.jpeg";
+import image16 from "./assets/images/image16.jpeg";
+import image17 from "./assets/images/image17.jpeg";
+import image18 from "./assets/images/image18.jpeg";
+import image19 from "./assets/images/image19.jpeg";
+import image20 from "./assets/images/image20.jpeg";
+import image21 from "./assets/images/image21.jpeg";
 
 import MenuCard from './Components/MenuCard';
 import CategoryFilter from './Components/CategoryFilter';
@@ -25,15 +32,73 @@ export default function Menu() {
 
   const menuItems = [
     // Newest items first (Reversed Order)
-    { id: 18, name: "300g Protein Shake", category: "Protein", price: 420, desc: "A nutrient-dense high-protein meal delivering 300g protein to support muscle growth, recovery, and energy. Ideal for fitness-focused individuals looking for a balanced and affordable protein-rich diet option.", img: image13, rating: 4.8, time: "10 min", isVeg: true },
+     { id: 24, name: "300g Protein Shake", category: "Protein", price: 420, desc: "", img: image13, rating: 4.8, time: "10 min", isVeg: true },
 
+     { id: 23, name: "Sandwich and Fries Combo", category: "Combo", price: 100, desc: "", img: image21, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 22, name: "Top Moon Combo ", category: "Combo", price: 150, desc: "", img: image20, rating: 4.8, time: "10 min", isVeg: true },
+   
     {
-      id: 16,
+      id: 21,
       name: "Peanut Butter",
       category: "Protein",
       price: 250,
       desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
       img: image12,
+      rating: 4.8,
+      time: "10 min",
+      isVeg: true
+    },
+    {
+      id: 20,
+      name: "Peanut Butter Banana Toast",
+      category: "Protein",
+      price: 100,
+      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
+      img: image15,
+      rating: 4.8,
+      time: "10 min",
+      isVeg: true
+    },
+    {
+      id: 19,
+      name: "Peanut Butter and Banana  Sandwich",
+      category: "Protein",
+      price: 70,
+      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
+      img: image16,
+      rating: 4.8,
+      time: "10 min",
+      isVeg: true
+    },
+    {
+      id: 18,
+      name: "Healthy Sprouts",
+      category: "Protein",
+      price: 111,
+      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
+      img: image17,
+      rating: 4.8,
+      time: "10 min",
+      isVeg: true
+    },
+    {
+      id: 17,
+      name: "Plain Peanut Butter Sandwich",
+      category: "Protein",
+      price: 120,
+      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
+      img: image19,
+      rating: 4.8,
+      time: "10 min",
+      isVeg: true
+    },
+    {
+      id: 16,
+      name: "Grilled  Peanut Butter Banana Sandwich",
+      category: "Protein",
+      price: 120,
+      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
+      img: image18,
       rating: 4.8,
       time: "10 min",
       isVeg: true
