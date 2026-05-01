@@ -1,5 +1,10 @@
 import React, { useState, useMemo } from 'react';
 
+import MenuCard from './Components/MenuCard';
+import CategoryFilter from './Components/CategoryFilter';
+import MenuHeader from './Components/MenuHeader';
+
+// Import all images
 import coffeewithIceCream from "./assets/images/coffeewithicecream.jpeg";
 import twocoffee from "./assets/images/2coffee.jpeg";
 import coffeewithsandwich from "./assets/images/cofeewithsandwich.jpeg";
@@ -9,11 +14,9 @@ import Oreomilkshake from "./assets/images/threeoreomilkshake.jpeg";
 import image1 from "./assets/images/image1.jpeg";
 import image2 from "./assets/images/image2.jpeg";
 import image3 from "./assets/images/image3.jpeg";
-import image4 from "./assets/images/image4.jpeg";
 import image5 from "./assets/images/image5.jpeg";
 import image12 from "./assets/images/image12.jpeg";
 import image13 from "./assets/images/image13.jpeg";
-import image14 from "./assets/images/image14.jpeg";
 import image15 from "./assets/images/image15.jpeg";
 import image16 from "./assets/images/image16.jpeg";
 import image17 from "./assets/images/image17.jpeg";
@@ -22,219 +25,47 @@ import image19 from "./assets/images/image19.jpeg";
 import image20 from "./assets/images/image20.jpeg";
 import image21 from "./assets/images/image21.jpeg";
 
-import MenuCard from './Components/MenuCard';
-import CategoryFilter from './Components/CategoryFilter';
-import MenuHeader from './Components/MenuHeader';
-
 export default function Menu() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const menuItems = [
-    // Newest items first (Reversed Order)
-     { id: 24, name: "300g Protein Shake", category: "Protein", price: 420, desc: "", img: image13, rating: 4.8, time: "10 min", isVeg: true },
-
-     { id: 23, name: "Sandwich and Fries Combo", category: "Combo", price: 100, desc: "", img: image21, rating: 4.8, time: "10 min", isVeg: true },
-    { id: 22, name: "Top Moon Combo ", category: "Combo", price: 150, desc: "", img: image20, rating: 4.8, time: "10 min", isVeg: true },
-   
-    {
-      id: 21,
-      name: "Peanut Butter",
-      category: "Protein",
-      price: 250,
-      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
-      img: image12,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 20,
-      name: "Peanut Butter Banana Toast",
-      category: "Protein",
-      price: 100,
-      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
-      img: image15,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 19,
-      name: "Peanut Butter and Banana  Sandwich",
-      category: "Protein",
-      price: 70,
-      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
-      img: image16,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 18,
-      name: "Healthy Sprouts",
-      category: "Protein",
-      price: 111,
-      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
-      img: image17,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 17,
-      name: "Plain Peanut Butter Sandwich",
-      category: "Protein",
-      price: 120,
-      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
-      img: image19,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 16,
-      name: "Grilled  Peanut Butter Banana Sandwich",
-      category: "Protein",
-      price: 120,
-      desc: "Creamy and protein-rich peanut butter made from high-quality roasted peanuts. Packed with healthy fats and energy.",
-      img: image18,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 15,
-      name: "150g Protein Power Meal",
-      category: "Protein",
-      price: 330,
-      desc: "A nutrient-dense high-protein meal delivering 150g protein to support muscle growth and recovery.",
-      img: image3,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 17,
-      name: "200g Protein Power Portion",
-      category: "Protein",
-      price: 330,
-      desc: "A large, high-protein portion designed to fuel intense workouts and muscle recovery.",
-      img: image5,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 14,
-      name: "200g Protein Power Meal",
-      category: "Protein",
-      price: 299,
-      desc: "A high-performance protein-packed meal delivering 200g of quality protein.",
-      img: image1,
-      rating: 4.8,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 13,
-      name: "100g Protein Meal",
-      category: "Protein",
-      price: 149,
-      desc: "High-protein balanced meal packed with 100g quality protein. Perfect for gym lovers.",
-      img: image2,
-      rating: 4.7,
-      time: "12 min",
-      isVeg: true
-    },
-    {
-      id: 12,
-      name: "Oreo Milkshake",
-      category: "Beverages",
-      price: 130,
-      desc: "Delicious Oreo milkshake with ice cream",
-      img: Oreomilkshake,
-      rating: 4.9,
-      time: "10 min",
-      isVeg: true
-    },
-    {
-      id: 11,
-      name: "Cappuccino",
-      category: "Beverages",
-      price: 100,
-      desc: "Rich and creamy cappuccino",
-      img: Cappuccino,
-      rating: 4.9,
-      time: "8 min",
-      isVeg: true
-    },
-    {
-      id: 10,
-      name: "Burger Combo",
-      category: "Combo",
-      price: 150,
-      desc: "Burger with fries and coffee",
-      img: burgerfriescoffee,
-      rating: 4.8,
-      time: "20 min",
-      isVeg: true
-    },
-    {
-      id: 9,
-      name: "Sandwich Combo",
-      category: "Combo",
-      price: 150,
-      desc: "Large sandwich with fries and coffee",
-      img: coffeewithsandwich,
-      rating: 4.8,
-      time: "18 min",
-      isVeg: true
-    },
-    {
-      id: 7,
-      name: "Big Cold Coffee",
-      category: "Beverages",
-      price: 70,
-      desc: "Refreshing big cold coffee",
-      img: twocoffee,
-      rating: 4.8,
-      time: "12 min",
-      isVeg: true
-    },
-    {
-      id: 6,
-      name: "Top Moon Special",
-      category: "Beverages",
-      price: 150,
-      desc: "Cold Coffee + Ice Cream",
-      img: coffeewithIceCream,
-      rating: 4.8,
-      time: "14 min",
-      isVeg: true
-    },
-    {
-      id: 2,
-      name: "Cheese Fries",
-      category: "Fries",
-      price: 120,
-      desc: "Crispy fries loaded with melted cheese",
-      img: "https://static.vecteezy.com/system/resources/thumbnails/050/393/583/small/crispy-loaded-french-fries-with-cheese-sauce-and-bacon-photo.jpg",
-      rating: 4.7,
-      time: "15 min",
-      isVeg: true
-    },
+    // { id: 24, name: "300g Protein Shake",          category: "Protein",  price: 420, desc: "", img: image13, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 23, name: "Sandwich and Fries Combo",    category: "Combo",    price: 100, desc: "", img: image21, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 22, name: "Top Moon Combo",              category: "Combo",    price: 150, desc: "", img: image20, rating: 4.8, time: "10 min", isVeg: true },
+    // { id: 21, name: "Peanut Butter",               category: "Protein",  price: 250, desc: "Creamy and protein-rich peanut butter...", img: image12, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 20, name: "Peanut Butter Banana Toast",  category: "Protein",  price: 100, desc: "", img: image15, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 19, name: "Peanut Butter and Banana Sandwich", category: "Protein", price: 70, desc: "", img: image16, rating: 4.8, time: "10 min", isVeg: true },
+    // { id: 18, name: "Healthy Sprouts",             category: "Protein",  price: 111, desc: "", img: image17, rating: 4.8, time: "10 min", isVeg: true },
+    // { id: 17, name: "Plain Peanut Butter Sandwich",category: "Protein",  price: 120, desc: "", img: image19, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 16, name: "Grilled Peanut Butter Banana Sandwich", category: "Protein", price: 120, desc: "", img: image18, rating: 4.8, time: "10 min", isVeg: true },
+    // { id: 15, name: "150g Protein Power Meal",     category: "Protein",  price: 330, desc: "", img: image3, rating: 4.8, time: "10 min", isVeg: true },
+    // { id: 14, name: "200g Protein Power Portion",  category: "Protein",  price: 330, desc: "", img: image5, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 13, name: "200g Protein Power Meal",     category: "Protein",  price: 299, desc: "", img: image1, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 12, name: "100g Protein Meal",           category: "Protein",  price: 149, desc: "", img: image2, rating: 4.7, time: "12 min", isVeg: true },
+    { id: 11, name: "Oreo Milkshake",              category: "Beverages", price: 130, desc: "Delicious Oreo milkshake with ice cream", img: Oreomilkshake, rating: 4.9, time: "10 min", isVeg: true },
+    { id: 10, name: "Cappuccino",                  category: "Beverages", price: 100, desc: "Rich and creamy cappuccino", img: Cappuccino, rating: 4.9, time: "8 min", isVeg: true },
+    { id: 9,  name: "Burger Combo",                category: "Combo",    price: 150, desc: "Burger with fries and coffee", img: burgerfriescoffee, rating: 4.8, time: "20 min", isVeg: true },
+    { id: 8,  name: "Sandwich Combo",              category: "Combo",    price: 150, desc: "Large sandwich with fries and coffee", img: coffeewithsandwich, rating: 4.8, time: "18 min", isVeg: true },
+    { id: 7,  name: "Big Cold Coffee",             category: "Beverages", price: 70, desc: "Refreshing big cold coffee", img: twocoffee, rating: 4.8, time: "12 min", isVeg: true },
+    { id: 6,  name: "Top Moon Special",            category: "Beverages", price: 150, desc: "Cold Coffee + Ice Cream", img: coffeewithIceCream, rating: 4.8, time: "14 min", isVeg: true },
+    { id: 5,  name: "Cheese Fries",                category: "Fries",    price: 120, desc: "Crispy fries loaded with melted cheese", img: "https://static.vecteezy.com/system/resources/thumbnails/050/393/583/small/crispy-loaded-french-fries-with-cheese-sauce-and-bacon-photo.jpg", rating: 4.7, time: "15 min", isVeg: true },
   ];
 
-  // Get unique categories dynamically
-  const categories = ['All', ...new Set(menuItems.map(item => item.category))];
+  // Get unique categories
+  const categories = useMemo(() => {
+    const unique = ['All', ...new Set(menuItems.map(item => item.category))];
+    return unique;
+  }, []);
 
-  // Filtered & Searched Items
+  // Filtered items
   const filteredItems = useMemo(() => {
+    const term = searchTerm.toLowerCase().trim();
+
     return menuItems.filter(item => {
-      const matchesSearch =
-        item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.desc.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesSearch = 
+        item.name.toLowerCase().includes(term) ||
+        (item.desc && item.desc.toLowerCase().includes(term));
 
       const matchesCategory = selectedCategory === 'All' || item.category === selectedCategory;
 
@@ -247,7 +78,7 @@ export default function Menu() {
       <MenuHeader />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-10">
-
+        
         {/* Search Bar */}
         <div className="max-w-xl mx-auto mb-10">
           <input
@@ -259,7 +90,7 @@ export default function Menu() {
           />
         </div>
 
-        {/* Category Badges */}
+        {/* Category Filter */}
         <CategoryFilter
           categories={categories}
           selectedCategory={selectedCategory}
@@ -274,7 +105,7 @@ export default function Menu() {
             ))
           ) : (
             <div className="col-span-full text-center py-20 text-zinc-400">
-              No items found for "{searchTerm}"
+              No items found for "{searchTerm || selectedCategory}"
             </div>
           )}
         </div>
