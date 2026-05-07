@@ -28,7 +28,10 @@ import image22 from "./assets/images/image22.jpeg";
 import image23 from "./assets/images/image23.jpeg";
 import image24 from "./assets/images/image24.jpeg";
 import image25 from "./assets/images/image25.jpeg";
+
 import image26 from "./assets/images/image26.jpeg";
+import shop1 from "./assets/images/shop1.jpeg";
+import shop2 from "./assets/images/shop2.jpeg";
 export default function Menu() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -43,8 +46,8 @@ export default function Menu() {
     // { id: 18, name: "Healthy Sprouts",             category: "Protein",  price: 111, desc: "", img: image17, rating: 4.8, time: "10 min", isVeg: true },
     // { id: 17, name: "Plain Peanut Butter Sandwich",category: "Protein",  price: 120, desc: "", img: image19, rating: 4.8, time: "10 min", isVeg: true },
     { id: 16, name: "Grilled Peanut Butter Banana Sandwich", category: "Protein", price: 120, desc: "", img: image18, rating: 4.8, time: "10 min", isVeg: true },
-  { id: 15, name: "",                category: "Muskan restaurant Mumbra.",   },
-    {id: 14,   name: "",                category: "New mariam medical Mumbra",    },
+  { id: 15, name: "",                category: "Muskan restaurant Mumbra.", img:shop1  },
+    {id: 14,   name: "",                category: "New mariam medical Mumbra",   img:shop2 },
     { id: 13, name: "200g Protein Power Meal",     category: "Protein",  price: 299, desc: "", img: image1, rating: 4.8, time: "10 min", isVeg: true },
     { id: 12, name: "100g Protein Meal",           category: "Protein",  price: 149, desc: "", img: image2, rating: 4.7, time: "12 min", isVeg: true },
     { id: 11, name: "Oreo Milkshake",              category: "Beverages", price: 130, desc: "Delicious Oreo milkshake with ice cream", img: Oreomilkshake, rating: 4.9, time: "10 min", isVeg: true },
