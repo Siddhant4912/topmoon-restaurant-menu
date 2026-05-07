@@ -24,7 +24,11 @@ import image18 from "./assets/images/image18.jpeg";
 import image19 from "./assets/images/image19.jpeg";
 import image20 from "./assets/images/image20.jpeg";
 import image21 from "./assets/images/image21.jpeg";
-
+import image22 from "./assets/images/image22.jpeg";
+import image23 from "./assets/images/image23.jpeg";
+import image24 from "./assets/images/image24.jpeg";
+import image25 from "./assets/images/image25.jpeg";
+import image26 from "./assets/images/image26.jpeg";
 export default function Menu() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -39,8 +43,8 @@ export default function Menu() {
     // { id: 18, name: "Healthy Sprouts",             category: "Protein",  price: 111, desc: "", img: image17, rating: 4.8, time: "10 min", isVeg: true },
     // { id: 17, name: "Plain Peanut Butter Sandwich",category: "Protein",  price: 120, desc: "", img: image19, rating: 4.8, time: "10 min", isVeg: true },
     { id: 16, name: "Grilled Peanut Butter Banana Sandwich", category: "Protein", price: 120, desc: "", img: image18, rating: 4.8, time: "10 min", isVeg: true },
-    // { id: 15, name: "150g Protein Power Meal",     category: "Protein",  price: 330, desc: "", img: image3, rating: 4.8, time: "10 min", isVeg: true },
-    // { id: 14, name: "200g Protein Power Portion",  category: "Protein",  price: 330, desc: "", img: image5, rating: 4.8, time: "10 min", isVeg: true },
+  { id: 15, name: "",                category: "Muskan restaurant Mumbra.",   },
+    {id: 14,   name: "",                category: "New mariam medical Mumbra",    },
     { id: 13, name: "200g Protein Power Meal",     category: "Protein",  price: 299, desc: "", img: image1, rating: 4.8, time: "10 min", isVeg: true },
     { id: 12, name: "100g Protein Meal",           category: "Protein",  price: 149, desc: "", img: image2, rating: 4.7, time: "12 min", isVeg: true },
     { id: 11, name: "Oreo Milkshake",              category: "Beverages", price: 130, desc: "Delicious Oreo milkshake with ice cream", img: Oreomilkshake, rating: 4.9, time: "10 min", isVeg: true },
@@ -50,6 +54,11 @@ export default function Menu() {
     { id: 7,  name: "Big Cold Coffee",             category: "Beverages", price: 70, desc: "Refreshing big cold coffee", img: twocoffee, rating: 4.8, time: "12 min", isVeg: true },
     { id: 6,  name: "Top Moon Special",            category: "Beverages", price: 150, desc: "Cold Coffee + Ice Cream", img: coffeewithIceCream, rating: 4.8, time: "14 min", isVeg: true },
     { id: 5,  name: "Cheese Fries",                category: "Fries",    price: 120, desc: "Crispy fries loaded with melted cheese", img: "https://static.vecteezy.com/system/resources/thumbnails/050/393/583/small/crispy-loaded-french-fries-with-cheese-sauce-and-bacon-photo.jpg", rating: 4.7, time: "15 min", isVeg: true },
+    { id: 17,  name: "Tandoori Momo",                category: "Momo adda",    price: 130, desc: "", img: image25, rating: 4.7, time: "15 min", isVeg: false },
+    { id: 4,  name: "Kurkure momo",                category: "Momo adda",    price: 150, desc: "", img: image22, rating: 4.7, time: "15 min", isVeg: false },
+    { id: 3,  name: "Tikka momo",                category: "Momo adda",    price: 130, desc: "", img: image24, rating: 4.7, time: "15 min", isVeg: false },
+    { id: 2,  name: "Peri Per momo",                category: "Momo adda",    price: 130, desc: "", img: image26, rating: 4.7, time: "15 min", isVeg: false },
+    { id: 1,  name: "Chicken cheeze momo",                category: "Momo adda",    price: 150, desc: "", img: image23, rating: 4.7, time: "15 min", isVeg: false },
   ];
 
   // Get unique categories
