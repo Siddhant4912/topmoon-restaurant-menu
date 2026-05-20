@@ -46,8 +46,8 @@ export default function Menu() {
     // { id: 18, name: "Healthy Sprouts",             category: "Protein",  price: 111, desc: "", img: image17, rating: 4.8, time: "10 min", isVeg: true },
     // { id: 17, name: "Plain Peanut Butter Sandwich",category: "Protein",  price: 120, desc: "", img: image19, rating: 4.8, time: "10 min", isVeg: true },
     { id: 16, name: "Grilled Peanut Butter Banana Sandwich", category: "Protein", price: 120, desc: "", img: image18, rating: 4.8, time: "10 min", isVeg: true },
-  { id: 15, name: "",                category: "Muskan restaurant Mumbra.", img:shop1  },
-    {id: 14,   name: "",                category: "New mariam medical Mumbra",   img:shop2 },
+  // { id: 15, name: "",                category: "Muskan restaurant Mumbra.", img:shop1  },
+    // {id: 14,   name: "",                category: "New mariam medical Mumbra",   img:shop2 },
     { id: 13, name: "200g Protein Power Meal",     category: "Protein",  price: 299, desc: "", img: image1, rating: 4.8, time: "10 min", isVeg: true },
     { id: 12, name: "100g Protein Meal",           category: "Protein",  price: 149, desc: "", img: image2, rating: 4.7, time: "12 min", isVeg: true },
     { id: 11, name: "Oreo Milkshake",              category: "Beverages", price: 130, desc: "Delicious Oreo milkshake with ice cream", img: Oreomilkshake, rating: 4.9, time: "10 min", isVeg: true },
@@ -130,8 +130,8 @@ export default function Menu() {
             <h3 className="text-xl font-semibold mb-3 text-amber-500">📍 Address</h3>
             <p className="text-zinc-400">
               Top Moon<br />
-              In front of Samrat Nagar gate, beside Mumbra police station<br />
-              Thane, Mumbra - 400612
+              Chaupati chai Pani <br />
+              Mumbra, Kalwa Service Road Retibandar No:- 4
             </p>
           </div>
           <div>
