@@ -32,12 +32,28 @@ import image25 from "./assets/images/image25.jpeg";
 import image26 from "./assets/images/image26.jpeg";
 import shop1 from "./assets/images/shop1.jpeg";
 import shop2 from "./assets/images/shop2.jpeg";
+import malabaraparatha from "./assets/images/malbara_paratha.jpeg";
+import maggie from "./assets/images/maggin.jpeg";
+import muttonran from "./assets/images/mutton_ran.jpeg";
+import chikentikka from "./assets/images/chikentikka.jpeg";
+import chicken_ran from "./assets/images/chiken_ran.jpeg";
+import BhurjiParatha from "./assets/images/bhurji_pratha.jpeg";
+import TopMoonKhapsa from "./assets/images/TopMoonKhapsa.jpeg";
+import andaraice from "./assets/images/andarice.jpeg"; 
 export default function Menu() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const menuItems = [
     // { id: 24, name: "300g Protein Shake",          category: "Protein",  price: 420, desc: "", img: image13, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 31, name: "Cheese Maggie",    category: "Maggie",    price: 150, desc: "", img: maggie, rating: 4.8, time: "10 min", isVeg: true },
+    { id: 30, name: "Chicken Tikka",    category: "Top Moon Dinner",    price: 1500, desc: "", img: chikentikka, rating: 4.8, time: "10 min", isVeg: false },
+    { id: 29, name: "Top Moon khapsa",    category: "Top Moon Dinner",    price: 1500, desc: "", img: TopMoonKhapsa, rating: 4.8, time: "10 min", isVeg: false },
+    { id: 28, name: "Bhurji Paratha",    category: "Top Moon Dinner",    price: 120, desc: "", img: BhurjiParatha, rating: 4.8, time: "10 min", isVeg: false },
+    { id: 27, name: "Mutton Ran",    category: "Top Moon Dinner",    price: 2100, desc: "", img: muttonran, rating: 4.8, time: "10 min", isVeg: false },
+    { id: 26, name: "Anda Rice",    category: "Top Moon Dinner",    price: 160, desc: "", img: andaraice, rating: 4.8, time: "10 min", isVeg: false },
+    { id: 25, name: "Chicken Ran",    category: "Top Moon Dinner",    price: 800, desc: "", img: chicken_ran, rating: 4.8, time: "10 min", isVeg: false },
+    { id: 24, name: "Malbara Paratha",    category: "Top Moon Dinner",    price: 700, desc: "", img: malabaraparatha, rating: 4.8, time: "10 min", isVeg: false },
     { id: 23, name: "Sandwich and Fries Combo",    category: "Combo",    price: 100, desc: "", img: image21, rating: 4.8, time: "10 min", isVeg: true },
     { id: 22, name: "Top Moon Combo",              category: "Combo",    price: 150, desc: "", img: image20, rating: 4.8, time: "10 min", isVeg: true },
     // { id: 21, name: "Peanut Butter",               category: "Protein",  price: 250, desc: "Creamy and protein-rich peanut butter...", img: image12, rating: 4.8, time: "10 min", isVeg: true },
