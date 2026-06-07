@@ -52,17 +52,12 @@ export default function Menu() {
     { id: 12, name: "100g Protein Meal",           category: "Protein",  price: 149, desc: "", img: image2, rating: 4.7, time: "12 min", isVeg: true },
     { id: 11, name: "Oreo Milkshake",              category: "Beverages", price: 130, desc: "Delicious Oreo milkshake with ice cream", img: Oreomilkshake, rating: 4.9, time: "10 min", isVeg: true },
     { id: 10, name: "Cappuccino",                  category: "Beverages", price: 100, desc: "Rich and creamy cappuccino", img: Cappuccino, rating: 4.9, time: "8 min", isVeg: true },
-    { id: 9,  name: "Burger Combo",                category: "Combo",    price: 150, desc: "Burger with fries and coffee", img: burgerfriescoffee, rating: 4.8, time: "20 min", isVeg: true },
-    { id: 8,  name: "Sandwich Combo",              category: "Combo",    price: 150, desc: "Large sandwich with fries and coffee", img: coffeewithsandwich, rating: 4.8, time: "18 min", isVeg: true },
-    { id: 7,  name: "Big Cold Coffee",             category: "Beverages", price: 70, desc: "Refreshing big cold coffee", img: twocoffee, rating: 4.8, time: "12 min", isVeg: true },
+    { id: 9,  name: "Burger Combo",                category: "Combo",    price: 250, desc: "Burger with fries and coffee", img: burgerfriescoffee, rating: 4.8, time: "20 min", isVeg: true },
+    { id: 8,  name: "Sandwich Combo",              category: "Combo",    price: 250, desc: "Large sandwich with fries and coffee", img: coffeewithsandwich, rating: 4.8, time: "18 min", isVeg: true },
+    { id: 7,  name: "Big Cold Coffee",             category: "Beverages", price: 100, desc: "Refreshing big cold coffee", img: twocoffee, rating: 4.8, time: "12 min", isVeg: true },
     { id: 6,  name: "Top Moon Special",            category: "Beverages", price: 150, desc: "Cold Coffee + Ice Cream", img: coffeewithIceCream, rating: 4.8, time: "14 min", isVeg: true },
-    { id: 5,  name: "Cheese Fries",                category: "Fries",    price: 120, desc: "Crispy fries loaded with melted cheese", img: "https://static.vecteezy.com/system/resources/thumbnails/050/393/583/small/crispy-loaded-french-fries-with-cheese-sauce-and-bacon-photo.jpg", rating: 4.7, time: "15 min", isVeg: true },
-    { id: 17,  name: "Tandoori Momo",                category: "Momo adda",    price: 130, desc: "", img: image25, rating: 4.7, time: "15 min", isVeg: false },
-    { id: 4,  name: "Kurkure momo",                category: "Momo adda",    price: 150, desc: "", img: image22, rating: 4.7, time: "15 min", isVeg: false },
-    { id: 3,  name: "Tikka momo",                category: "Momo adda",    price: 130, desc: "", img: image24, rating: 4.7, time: "15 min", isVeg: false },
-    { id: 2,  name: "Peri Per momo",                category: "Momo adda",    price: 130, desc: "", img: image26, rating: 4.7, time: "15 min", isVeg: false },
-    { id: 1,  name: "Chicken cheeze momo",                category: "Momo adda",    price: 150, desc: "", img: image23, rating: 4.7, time: "15 min", isVeg: false },
-  ];
+    { id: 5,  name: "Cheese Fries",                category: "Fries",    price: 200, desc: "Crispy fries loaded with melted cheese", img: "https://static.vecteezy.com/system/resources/thumbnails/050/393/583/small/crispy-loaded-french-fries-with-cheese-sauce-and-bacon-photo.jpg", rating: 4.7, time: "15 min", isVeg: true },
+   ];
 
   // Get unique categories
   const categories = useMemo(() => {
@@ -124,7 +119,7 @@ export default function Menu() {
       </div>
 
       {/* Contact Section */}
-      <div className="bg-zinc-900 border-t border-zinc-800 py-12 px-6 mt-10">
+      <div className="bg-zinc-900 border-t border-zinc-800 py-12 px-2 mt-10">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
           <div>
             <h3 className="text-xl font-semibold mb-3 text-amber-500">📍 Address</h3>
@@ -137,11 +132,17 @@ export default function Menu() {
           <div>
             <h3 className="text-xl font-semibold mb-3 text-amber-500">📞 Contact</h3>
             <p className="text-zinc-400">+91 7738443584</p>
-            <p className="text-zinc-400">Ganesh Chandrakant Jagtap</p>
+            <p className="text-zinc-400">+91 9833292340</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-3 text-amber-500">📞 Cafe Owner</h3>
+           
+            <p className="text-zinc-400">Ganesh Chandrakant Jagtap,</p>
+            <p className="text-zinc-400">Aniket Ganesh Kine </p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-3 text-amber-500">⏰ Opening Hours</h3>
-            <p className="text-zinc-400">Mon - Sun: 6:00 PM – 11:00 PM</p>
+            <p className="text-zinc-400">Mon - Sun: 6:00 AM – 12:00 PM</p>
           </div>
         </div>
       </div>
